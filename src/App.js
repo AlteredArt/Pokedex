@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
-function App() {
+const PokemonList = (props) => {
+  const handleClick = (pokemon) => {
+    props.setSelectedPokemon(pokemon)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <h3>All Pokemon</h3>
+        <ul>
+         {props.pokemons.map((pokemon) => (
+           <li><a onClick={() => {handleClick(pokemon)}}>{pokemon.name}</a></li>))}
+      </ul>
+    </React.Fragment>
   );
+};
+
+
+const PokemonDetail = ({pokemon}) => {
+  if(!pokemon) {
+    return null;
+  }
+  return <h3>{pokemon.name}</h3>;
+  
 }
 
-export default App;
+export default function App() {
+  const [pokemons, setPokemons] = useState([{name: "Bulbasaur"}]);
+  const [selectedPokemon, setSelectedPokemon] = useState(null)
+
+  useEffect(() => {
+    fetch('https://pokeapi.co/api/v2/pokemon')
+    .then(res => res.json())
+    .then((data) => setPokemons(data.results));
+  }, []);
+
+  return (
+   <div className="App">
+   <h1>Pokedex</h1>
+    <PokemonList pokemons={pokemons} setSelectedPokemon={setSelectedPokemon}/>
+    <PokemonDetail pokemon={selectedPokemon} />
+   </div>
+  )
+}
+
+
