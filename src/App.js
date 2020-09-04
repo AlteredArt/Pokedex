@@ -10,7 +10,7 @@ const PokemonList = (props) => {
       <h3>All Pokemon</h3>
         <ul>
          {props.pokemons.map((pokemon) => (
-           <li><a onClick={() => {handleClick(pokemon)}}>{pokemon.name}</a></li>))}
+           <li className="li"><a onClick={() => {handleClick(pokemon)}}>{pokemon.name}</a></li>))}
       </ul>
     </React.Fragment>
   );
