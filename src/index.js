@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './intro/AppIntro';
-import App from './useEffect/AppEffect';
-
-
+import App from './Pokedex/AppPoke2'
 
 ReactDOM.render(
     <App />,
