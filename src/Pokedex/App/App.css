@@ -1,0 +1,63 @@
+
+.poke {
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -200px; 
+    margin-left: -130px;
+  }
+  .ball{
+    padding: 20px;
+    background-color: black;
+    border: 10px solid #FEEC57;;
+    border-radius: 50px;
+    opacity: 0.6;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    margin-top: -230px; 
+    margin-left: -200px; 
+  }
+  .info{
+    padding-top: 350px;
+  }
+#name{
+    text-transform: uppercase;
+    text-shadow:2px 2px #fff;
+  }
+.header{
+    text-transform: uppercase;
+    text-shadow:2px 2px #fff;
+  }
+button {
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    border:2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    outline: none;
+    font-size: 20px;
+  }
+  
+button:hover {
+    filter: brightness(115%);
+    background: oldlace;
+    color: black;
+  }
+  
+input{
+    font-size: 20px;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px;
+  }
+
+ 
