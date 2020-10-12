@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Shiny-Pokedex/static/css/main.2741ac3f.chunk.css",
+    "main.js": "/Shiny-Pokedex/static/js/main.17fe4465.chunk.js",
+    "main.js.map": "/Shiny-Pokedex/static/js/main.17fe4465.chunk.js.map",
+    "runtime-main.js": "/Shiny-Pokedex/static/js/runtime-main.a4648c32.js",
+    "runtime-main.js.map": "/Shiny-Pokedex/static/js/runtime-main.a4648c32.js.map",
+    "static/js/2.7e17f7b6.chunk.js": "/Shiny-Pokedex/static/js/2.7e17f7b6.chunk.js",
+    "static/js/2.7e17f7b6.chunk.js.map": "/Shiny-Pokedex/static/js/2.7e17f7b6.chunk.js.map",
+    "index.html": "/Shiny-Pokedex/index.html",
+    "precache-manifest.5b743f34819a10c5535e6f021933fdbe.js": "/Shiny-Pokedex/precache-manifest.5b743f34819a10c5535e6f021933fdbe.js",
+    "service-worker.js": "/Shiny-Pokedex/service-worker.js",
+    "static/css/main.2741ac3f.chunk.css.map": "/Shiny-Pokedex/static/css/main.2741ac3f.chunk.css.map",
+    "static/js/2.7e17f7b6.chunk.js.LICENSE.txt": "/Shiny-Pokedex/static/js/2.7e17f7b6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4648c32.js",
+    "static/js/2.7e17f7b6.chunk.js",
+    "static/css/main.2741ac3f.chunk.css",
+    "static/js/main.17fe4465.chunk.js"
+  ]
+}
